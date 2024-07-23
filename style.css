@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 17px;
+    line-height: 1.47059;
+    font-weight: 400;
+    letter-spacing: -0.022em;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: rgb(255, 255, 255);
+    color: rgb(29, 29, 31);
+    font-style: normal;
+}
+
+:root {
+    --globalnav-backdrop-filter: saturate(200%) blur(100px);
+    --globalnav-background: rgba(0, 0, 0, 0.831);
+}
+
+.container {
+    width: 100%;
+    /* height: 100vh; */
+    overflow-x: hidden;
+}
+
+
+/* Nav - section */
+
+.nav {
+    background: #1d1d1f;
+    width: 100%;
+    height: 105px;
+}
+
+.navup {
+    width: 100%;
+    height: 48px;
+    background-color: var(--globalnav-background);
+    backdrop-filter: var(--globalnav-backdrop-filter);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: fixed;
+    top: 0;
+    border: 1px solid rgb(34, 33, 33);
+    z-index: 3000; */
+    top: 0;
+    position: fixed;
+    z-index: 300;
+}
+
+.navcontent {
+    height: 100%;
+    width: 80%;
+    margin: 0 250px;
+}
+
+.navcontent ul {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.navcontent ul li {
+    list-style: none;
+}
+
+.navcontent ul li a {
+    text-decoration: none;
+    color: rgb(186, 178, 178);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.navcontent ul li a img {
+    filter: invert(1);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navdown {
+    /* background: red; */
+    color: white;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    margin: 15px 0;
+    gap: 5px;
+    /* border: 1px solid white; */
+    /* height: 30vmin; */
+    position: relative;
+    top: 60px;
+}
+
+.navdownlinks a {
+    text-decoration: none;
+    color: #0164c6;
+}
+
+.navdownlinks a:hover {
+    text-decoration: underline;
+}
+
+
+/* Hero- section */
+
+.herosection {
+    background: black;
+    height: 638px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.herosection .herotext {
+    /* background: red; */
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 60px;
+}
+
+.herosection .herotext h2 {
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+    z-index: 1;
+}
+
+.herosection .herotext h3 {
+    font-size: 30px;
+    color: white;
+    font-weight: 400;
+    z-index: 1;
+}
+
+.herosection .herotext a {
+    font-size: 18px;
+    font-weight: 400;
+    Color: #2997ff;
+}
+
+.links {
+    display: flex;
+    gap: 54px;
+    padding-top: 18px;
+}
+
+.links a {
+    font-size: 21px;
+    line-height: 29px;
+    color: #2997ff;
+    font-weight: 400;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    z-index: 1;
+}
+
+.heroimage {
+    width: 100%;
+    /* background: red; */
+    height: 33vmin;
+    background-image: url('./heroIphone.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease;
+    /* Add a smooth transition effect */
+    /* Initial zoom level (1 is normal size) */
+    transform: scale(1.7);
+    /* transition: transform 0.3s ease; */
+}
+
+
+/* herosection2 */
+
+.herosection2 {
+    height: 638px;
+    width: 100%;
+    /* overflow: hidden; */
+    /* background: red; */
+    position: relative;
+}
+
+.herosection2 .herotext {
+    /* background: red; */
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 60px;
+    position: absolute;
+    top: 50px;
+}
+
+.herosection2 .herotext h2 {
+    font-size: 55px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    z-index: 20;
+}
+
+.herosection2 .herotext h3 {
+    font-size: 35px;
+    color: rgb(0, 0, 0);
+    font-weight: 200;
+    z-index: 21;
+    line-height: 23px;
+}
+
+.herosection2 .herotext a {
+    font-size: 18px;
+    font-weight: 400;
+    Color: #2997ff;
+}
+
+.links {
+    display: flex;
+    gap: 54px;
+    padding-top: 18px;
+}
+
+.links a {
+    font-size: 21px;
+    line-height: 29px;
+    color: #2997ff;
+    font-weight: 400;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    z-index: 1;
+}
+
+.herosection2 {
+    width: 100%;
+}
+
+.herosection2 .heroimage2 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+.herosection2 .heroimage2 img {
+    height: 645px;
+}
+
+.videosection {
+    width: 100%;
+    /* height: 400px; */
+    /* background: red; */
+    padding-top: 20px;
+    position: relative;
+}
+
+.videosection video {
+    object-fit: cover;
+}
+
+.videosection .videocontent {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.videocontent span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    height: 70px;
+}
+
+.videocontent span h1 {
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.videocontent>:nth-child(2) {
+    color: rgba(225, 221, 221, 0.916);
+}
+
+.videocontent p {
+    font-size: 1.5;
+    font-weight: 500;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.buttons .btn1 {
+    color: black;
+    background: white;
+    padding: 9px;
+    border-radius: 165px;
+    font-size: 17px;
+    width: 138px;
+}
+
+.buttons .btn2 {
+    color: black;
+    background: white;
+    padding: 9px;
+    border-radius: 34px;
+    font-size: 17px;
+    width: 80px;
+}
+
+
+/* Hide the seek bar in the video section */
+
+.videosection video::-webkit-media-controls-timeline,
+.videosection video::-webkit-media-controls,
+.videosection video::-webkit-media-controls-play-button,
+.videosection video::-webkit-media-controls-current-time-display,
+.videosection video::-webkit-media-controls-time-remaining-display,
+.videosection video::-webkit-media-controls-mute-button,
+.videosection video::-webkit-media-controls-volume-slider,
+.videosection video::-webkit-media-controls-volume-slider-container,
+.videosection video::-webkit-media-controls-fullscreen-button {
+    display: none !important;
+}
+
+
+/* Card section */
+
+.cardsection {
+    width: 100%;
+    height: auto;
+}
+
+.cardsection .row {
+    width: 100%;
+    height: 600px;
+    /* border: 1px solid black; */
+    display: flex;
+    gap: 3px;
+}
+
+.cardsection .row1 .col1 {
+    width: 50%;
+    height: 100%;
+    /* background: red; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(./watch.jpg);
+    background-position: center;
+    background-size: 165%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.cardsection .row1 .col2 {
+    width: 50%;
+    height: 100%;
+    /* background: red; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(./laptop.jpg);
+    background-position: center;
+    background-size: 165%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.cardsection .row2 .col1 {
+    width: 50%;
+    height: 100%;
+    /* background: red; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(./ipad.jpg);
+    background-position: center;
+    background-size: 165%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.cardsection .row2 .col2 {
+    width: 50%;
+    height: 100%;
+    /* background: red; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(./earpods.jpg);
+    background-position: center;
+    background-size: 165%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.cardsection .row2 .col2 .cardtext img {
+    filter: invert(1);
+}
+
+.cardsection .row3 .col1 {
+    width: 50%;
+    height: 100%;
+    /* background: red; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(./homepodmini.jpg);
+    background-position: center;
+    background-size: 165%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.cardsection .row3 .col2 {
+    width: 50%;
+    height: 100%;
+    /* background: red; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(./tradein.jpg);
+    background-position: center;
+    background-size: 165%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.cardsection .row .col .cardtext {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 36%;
+    top: 0;
+    gap: 0
+}
+
+.cardsection .row .col .cardtext .applewatchlogo {
+    margin-top: 51px;
+}
+
+.cardsection .row .col .cardtext h5 {
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: "poppins", sans-serif;
+    font-weight: 400;
+    color: #1d1d1f
+}
+
+.cardsection .row1 .col2 .cardtext h1 {
+    margin-top: 46px;
+    font-weight: 600;
+}
+
+
+/* swipper section */
